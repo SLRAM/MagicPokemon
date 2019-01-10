@@ -1,1 +1,1 @@
-# PokemonMagic
+# MagicPokemon
