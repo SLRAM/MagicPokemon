@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1uP-Gr-wKq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1uP-Gr-wKq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -67,7 +66,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gr7-Dt-36c"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pokemon" id="isw-71-mRe"/>
+                    <tabBarItem key="tabBarItem" title="Pokemon" image="icons8-pokemon" id="isw-71-mRe"/>
                     <connections>
                         <outlet property="pokemonCollectionView" destination="Mop-yM-qOU" id="f1A-Aj-laU"/>
                     </connections>
@@ -249,7 +248,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="aYM-n4-f30"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Magic" id="8aK-Ac-FZY"/>
+                    <tabBarItem key="tabBarItem" title="Magic" image="icons8-wizard_filled" id="8aK-Ac-FZY"/>
                     <connections>
                         <outlet property="magicCollectionView" destination="DPl-Ta-x3w" id="cyY-G8-9Yq"/>
                     </connections>
@@ -261,22 +260,22 @@
         <!--Magic Detail View Controller-->
         <scene sceneID="38g-3b-0ZH">
             <objects>
-                <viewController id="GsS-ST-rfm" customClass="MagicDetailViewController" customModule="PokemonMagic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MagicCards" id="GsS-ST-rfm" customClass="MagicDetailViewController" customModule="PokemonMagic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y83-19-g18">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kE1-sj-mVu">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="GsS-ST-rfm" eventType="touchUpInside" id="dPQ-LM-oSz"/>
                                 </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aoC-Nw-uxQ">
                                 <rect key="frame" x="48" y="133" width="281" height="421"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dNw-jy-r2C">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dNw-jy-r2C">
                                     <size key="itemSize" width="281" height="422"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -284,7 +283,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MagicDetailCollectionViewCell" id="sZt-8h-Y8Y" customClass="MagicDetailCollectionViewCell" customModule="PokemonMagic" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="281" height="422"/>
+                                        <rect key="frame" x="0.0" y="-0.5" width="281" height="422"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="281" height="422"/>
@@ -307,8 +306,9 @@
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ar0-rO-4Sa">
                                                     <rect key="frame" x="0.0" y="325" width="281" height="97"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.98822623239999996" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
@@ -340,7 +340,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.044790297746658325" green="0.041265837848186493" blue="0.11869240552186966" alpha="0.33335167253521125" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="iB8-vH-voD" firstAttribute="bottom" secondItem="kE1-sj-mVu" secondAttribute="bottom" id="4CH-FI-VTZ"/>
                             <constraint firstItem="aoC-Nw-uxQ" firstAttribute="width" secondItem="kE1-sj-mVu" secondAttribute="width" multiplier="0.75" id="AVQ-mF-VbS"/>
@@ -380,4 +380,8 @@
             <point key="canvasLocation" x="-1302" y="141"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-pokemon" width="25" height="25"/>
+        <image name="icons8-wizard_filled" width="25" height="25"/>
+    </resources>
 </document>

@@ -9,7 +9,6 @@
 import UIKit
 
 class MagicDetailCollectionViewCell: UICollectionViewCell {
-    
     @IBOutlet weak var magicText: UITextView!
     @IBOutlet weak var languageLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!

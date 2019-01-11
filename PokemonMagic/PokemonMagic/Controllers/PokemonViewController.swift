@@ -10,6 +10,7 @@ import UIKit
 
 class PokemonViewController: UIViewController {
     
+
     @IBOutlet weak var pokemonCollectionView: UICollectionView!
     
     private var pokemonCollection = [PokemonInfo]() {
@@ -75,3 +76,9 @@ extension PokemonViewController: UICollectionViewDelegateFlowLayout {
         present(pokemonDetailVC, animated: true, completion: nil)
     }
 }
+
+
+
+
+
+
