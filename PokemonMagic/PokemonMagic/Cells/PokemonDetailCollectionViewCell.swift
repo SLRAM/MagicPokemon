@@ -9,7 +9,6 @@
 import UIKit
 
 class PokemonDetailCollectionViewCell: UICollectionViewCell {
-    
     @IBOutlet weak var pokemonText: UITextView!
     @IBOutlet weak var hpLabel: UILabel!
     @IBOutlet weak var attackLabel: UILabel!

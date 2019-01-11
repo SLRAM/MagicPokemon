@@ -78,14 +78,14 @@
         <!--Pokemon Detail View Controller-->
         <scene sceneID="4EJ-YD-K6m">
             <objects>
-                <viewController id="ETx-u8-ZFe" customClass="PokemonDetailViewController" customModule="PokemonMagic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PokemonDetail" id="ETx-u8-ZFe" customClass="PokemonDetailViewController" customModule="PokemonMagic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sSa-0Y-gWO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uVi-zd-mUO">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="ETx-u8-ZFe" eventType="touchUpInside" id="IOQ-rI-w7d"/>
                                 </connections>
@@ -97,9 +97,9 @@
                                         <rect key="frame" x="49" y="21.5" width="183" height="231"/>
                                     </imageView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ds5-IQ-oMl">
-                                        <rect key="frame" x="0.0" y="252.5" width="281" height="168.5"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DIY-Ce-0lq">
+                                        <rect key="frame" x="5" y="252.5" width="271" height="168.5"/>
+                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DIY-Ce-0lq">
                                             <size key="itemSize" width="281" height="168"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -107,26 +107,26 @@
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokemonDetailCollectionViewCell" id="lX8-8N-dO7" customClass="PokemonDetailCollectionViewCell" customModule="PokemonMagic" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="281" height="168"/>
+                                                <rect key="frame" x="0.0" y="0.5" width="281" height="168"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                     <rect key="frame" x="0.0" y="0.0" width="281" height="168"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FiU-nd-nuh">
-                                                            <rect key="frame" x="8" y="28" width="265" height="21"/>
+                                                            <rect key="frame" x="13" y="28" width="255" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4J-Ku-730">
-                                                            <rect key="frame" x="8" y="59" width="265" height="21"/>
+                                                            <rect key="frame" x="13" y="59" width="255" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HkF-kJ-O7E">
-                                                            <rect key="frame" x="0.0" y="80" width="281" height="88"/>
+                                                            <rect key="frame" x="5" y="80" width="271" height="83"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -134,17 +134,18 @@
                                                         </textView>
                                                     </subviews>
                                                 </view>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="HkF-kJ-O7E" secondAttribute="bottom" id="7PG-W8-aT6"/>
-                                                    <constraint firstAttribute="trailingMargin" secondItem="Y4J-Ku-730" secondAttribute="trailing" id="8Ve-M7-CLF"/>
-                                                    <constraint firstAttribute="trailing" secondItem="HkF-kJ-O7E" secondAttribute="trailing" id="9iw-Xl-VU9"/>
-                                                    <constraint firstItem="Y4J-Ku-730" firstAttribute="leading" secondItem="lX8-8N-dO7" secondAttribute="leadingMargin" id="Dj9-dm-Oe8"/>
+                                                    <constraint firstAttribute="bottom" secondItem="HkF-kJ-O7E" secondAttribute="bottom" constant="5" id="7PG-W8-aT6"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="Y4J-Ku-730" secondAttribute="trailing" constant="5" id="8Ve-M7-CLF"/>
+                                                    <constraint firstAttribute="trailing" secondItem="HkF-kJ-O7E" secondAttribute="trailing" constant="5" id="9iw-Xl-VU9"/>
+                                                    <constraint firstItem="Y4J-Ku-730" firstAttribute="leading" secondItem="lX8-8N-dO7" secondAttribute="leadingMargin" constant="5" id="Dj9-dm-Oe8"/>
                                                     <constraint firstItem="Y4J-Ku-730" firstAttribute="top" secondItem="FiU-nd-nuh" secondAttribute="bottom" constant="10" id="QZw-gP-J2a"/>
                                                     <constraint firstItem="FiU-nd-nuh" firstAttribute="top" secondItem="lX8-8N-dO7" secondAttribute="topMargin" id="dnX-nw-thQ"/>
-                                                    <constraint firstAttribute="trailingMargin" secondItem="FiU-nd-nuh" secondAttribute="trailing" id="emL-uX-3TP"/>
-                                                    <constraint firstItem="HkF-kJ-O7E" firstAttribute="leading" secondItem="lX8-8N-dO7" secondAttribute="leading" id="fBJ-ib-w1S"/>
+                                                    <constraint firstAttribute="trailingMargin" secondItem="FiU-nd-nuh" secondAttribute="trailing" constant="5" id="emL-uX-3TP"/>
+                                                    <constraint firstItem="HkF-kJ-O7E" firstAttribute="leading" secondItem="lX8-8N-dO7" secondAttribute="leading" constant="5" id="fBJ-ib-w1S"/>
                                                     <constraint firstItem="HkF-kJ-O7E" firstAttribute="top" secondItem="Y4J-Ku-730" secondAttribute="bottom" id="oX9-pc-6df"/>
-                                                    <constraint firstItem="FiU-nd-nuh" firstAttribute="leading" secondItem="lX8-8N-dO7" secondAttribute="leadingMargin" id="sng-8R-PzB"/>
+                                                    <constraint firstItem="FiU-nd-nuh" firstAttribute="leading" secondItem="lX8-8N-dO7" secondAttribute="leadingMargin" constant="5" id="sng-8R-PzB"/>
                                                 </constraints>
                                                 <connections>
                                                     <outlet property="attackLabel" destination="FiU-nd-nuh" id="1EH-ga-0pB"/>
@@ -160,15 +161,15 @@
                                     <constraint firstItem="6og-li-Fbh" firstAttribute="width" secondItem="W6d-qC-nyd" secondAttribute="width" multiplier="0.65" id="GKR-9U-N6d"/>
                                     <constraint firstItem="ds5-IQ-oMl" firstAttribute="top" secondItem="6og-li-Fbh" secondAttribute="bottom" id="OUa-O7-HKh"/>
                                     <constraint firstAttribute="bottom" secondItem="ds5-IQ-oMl" secondAttribute="bottom" id="T03-ZS-Zdb"/>
-                                    <constraint firstAttribute="trailing" secondItem="ds5-IQ-oMl" secondAttribute="trailing" id="X2Y-OR-pHW"/>
+                                    <constraint firstAttribute="trailing" secondItem="ds5-IQ-oMl" secondAttribute="trailing" constant="5" id="X2Y-OR-pHW"/>
                                     <constraint firstItem="6og-li-Fbh" firstAttribute="centerX" secondItem="W6d-qC-nyd" secondAttribute="centerX" id="bBq-l9-HER"/>
                                     <constraint firstItem="6og-li-Fbh" firstAttribute="centerY" secondItem="W6d-qC-nyd" secondAttribute="centerY" multiplier="0.65" id="cVs-Ms-i7k"/>
-                                    <constraint firstItem="ds5-IQ-oMl" firstAttribute="leading" secondItem="W6d-qC-nyd" secondAttribute="leading" id="fHh-i5-sko"/>
+                                    <constraint firstItem="ds5-IQ-oMl" firstAttribute="leading" secondItem="W6d-qC-nyd" secondAttribute="leading" constant="5" id="fHh-i5-sko"/>
                                     <constraint firstItem="6og-li-Fbh" firstAttribute="height" secondItem="W6d-qC-nyd" secondAttribute="height" multiplier="0.55" id="mcP-9Y-cUb"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="uVi-zd-mUO" firstAttribute="leading" secondItem="B2L-0b-AJz" secondAttribute="leading" id="1zC-F8-Tcl"/>
                             <constraint firstItem="W6d-qC-nyd" firstAttribute="centerX" secondItem="uVi-zd-mUO" secondAttribute="centerX" id="DHl-to-8sv"/>
@@ -183,7 +184,7 @@
                     </view>
                     <connections>
                         <outlet property="highresImage" destination="6og-li-Fbh" id="KZv-Ia-2vh"/>
-                        <outlet property="pokemonDetialCollectionView" destination="ds5-IQ-oMl" id="oAN-br-Lk2"/>
+                        <outlet property="pokemonDetailCollectionView" destination="ds5-IQ-oMl" id="oAN-br-Lk2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcP-q8-70I" userLabel="First Responder" sceneMemberID="firstResponder"/>
