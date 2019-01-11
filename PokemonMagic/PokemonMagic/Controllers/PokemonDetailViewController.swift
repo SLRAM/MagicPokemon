@@ -22,7 +22,6 @@ class PokemonDetailViewController: UIViewController {
         pokemonDetailCollectionView.dataSource = self
         pokemonDetailCollectionView.delegate = self
         attacks = pokemon.attacks
-        print(attacks)
     }
     private func updatePokemonImage() {
         DispatchQueue.main.async {
@@ -36,17 +35,17 @@ class PokemonDetailViewController: UIViewController {
             })
         }
     }
+    
      @IBAction func buttonPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
      }
-
 }
-extension PokemonDetailViewController: UICollectionViewDataSource {
 
+extension PokemonDetailViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return attacks.count
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = pokemonDetailCollectionView.dequeueReusableCell(withReuseIdentifier: "PokemonDetailCollectionViewCell", for: indexPath) as? PokemonDetailCollectionViewCell else { return UICollectionViewCell()}
         let attackToSet = attacks[indexPath.row]
@@ -58,10 +57,10 @@ extension PokemonDetailViewController: UICollectionViewDataSource {
         } else {
             cell.pokemonText.isHidden = true
         }
-
         return cell
     }
 }
+
 extension PokemonDetailViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize.init(width: 300, height: 167)
@@ -70,5 +69,3 @@ extension PokemonDetailViewController: UICollectionViewDelegateFlowLayout {
         print("did it")
     }
 }
-
-
