@@ -9,12 +9,11 @@
 import UIKit
 
 class PokemonDetailViewController: UIViewController {
-
+    
     @IBOutlet weak var highresImage: UIImageView!
     @IBOutlet weak var pokemonDetialCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 

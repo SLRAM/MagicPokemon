@@ -10,17 +10,18 @@ import UIKit
 
 class PokemonViewController: UIViewController {
     
+
     @IBOutlet weak var pokemonCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        APIClient.getPokemon { (appError, pokemon) in
-            if let appError = appError {
-                print(appError.errorMessage())
-            } else if let pokemon = pokemon {
-               dump(pokemon)
-            }
-        }
+      
         
     }
 
 }
+
+
+
+
+
+
